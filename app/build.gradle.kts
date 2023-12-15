@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.project31"
+    namespace = "com.example.cyclingclubapp"
     compileSdk = 33
 
     defaultConfig {
