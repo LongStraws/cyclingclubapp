@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "216385288489",
+    "firebase_url": "https://cyclingclubapp-57d6b-default-rtdb.firebaseio.com",
+    "project_id": "cyclingclubapp-57d6b",
+    "storage_bucket": "cyclingclubapp-57d6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216385288489:android:e594618834dbfa5840df38",
+        "android_client_info": {
+          "package_name": "com.example.cylingclubapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFdLnKaNl-iXjmWtM2PiwR3PPW5xB1Pqg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

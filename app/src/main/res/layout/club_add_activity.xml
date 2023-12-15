@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:id="@+id/back"
+                android:layout_alignTop="@id/tt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/back"/>
+
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:text="Event"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tt"/>
+
+            <ImageView
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:id="@+id/setting"
+                android:visibility="gone"
+                android:layout_alignTop="@id/tt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/setting"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/welcomeBanner"
+            android:layout_width="333dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/welcome"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loggedInAs" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/user_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loadingString" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/roleIs" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loadingString" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="28sp" />
+
+        <TextView
+            android:id="@+id/main_page"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:text="Please Add a Game:" />
+
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="Event Description" />
+
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="Input distance" />
+
+        <EditText
+            android:id="@+id/editTextDistance"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="Enter altitude" />
+
+        <EditText
+            android:id="@+id/editTextLevel"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="landmark" />
+
+        <EditText
+            android:id="@+id/editTextSafety"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Difficulty level" />
+
+        <EditText
+            android:id="@+id/editTextConditions"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Route details" />
+
+        <EditText
+            android:id="@+id/editTextElevation"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Registration fee" />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/editTextLength"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Participant limit"
+            android:isScrollContainer="false" />
+
+
+        <Button
+            android:visibility="visible"
+            android:id="@+id/AddEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+
+        <ListView
+            android:visibility="gone"
+            android:id="@+id/listViewEvents"
+            android:layout_width="match_parent"
+            android:layout_height="243dp"
+            android:layout_below="@+id/textView"></ListView>
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/manageUserActivity"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:text="Users List" />
+
+            <Button
+                android:visibility="visible"
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/logout" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

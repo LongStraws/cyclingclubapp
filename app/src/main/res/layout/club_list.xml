@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Club">
+
+    <ImageView
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/back"
+        android:layout_alignTop="@id/tt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/back"/>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:text="Event Details"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tt"/>
+    <ImageView
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/setting"
+        android:visibility="gone"
+        android:layout_alignTop="@id/tt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/setting"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/tt"
+        android:layout_marginTop="20dp"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:visibility="visible"
+        android:id="@+id/logout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout" />
+
+    <Button
+        android:visibility="visible"
+        android:id="@+id/AddEvent_1"
+        android:layout_above="@id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Game" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">cylingclubapp</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">password</string>
+    <string name="register">Register</string>
+    <string name="btn_register">btn_register</string>
+    <string name="click_to_login">Click to login</string>
+    <string name="click_to_register">Click to register</string>
+    <string name="logout">Logout</string>
+    <string name="welcome">Welcome to The Grimpeurs Cycling Club App!</string>
+    <string name="main_page">Create an cycling event!</string>
+    <string name="loggedInAs">You are logged in as:</string>
+    <string name="roleIs">Your Role is:</string>
+    <string name="contDescIconBike">Icon of man on bike</string>
+    <string name="loadingString">Loading…</string>
+    <string name="username">username</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="back1">Back</string>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Club">
+
+
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:text="Welcome! Please search for an event:"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tt"/>
+
+
+    <EditText
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tt"
+        android:id="@+id/search_edit"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/custom_bg"
+        android:hint="Input event type or club to search" />
+
+
+    <TextView
+        android:id="@+id/sole_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_edit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-1dp"
+        android:padding="5dp"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:id="@+id/user_name"
+        android:layout_below="@id/sole_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:id="@+id/user_email"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"/>
+
+    <ImageView
+        android:id="@+id/search_btn"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@id/tt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/search_edit"
+        android:layout_alignTop="@id/search_edit"
+        android:layout_alignBottom="@id/search_edit"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/search"/>
+
+
+    <TextView
+        android:layout_below="@id/user_email"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+
+        android:text="No related events"
+        android:textColor="#FF0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_error"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/user_name"
+        android:layout_marginTop="40dp"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:visibility="visible"
+        android:id="@+id/logout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout" />
+
+    <Button
+        android:id="@+id/view_games"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:text="View My Games"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/scrollView">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/welcomeBanner"
+            android:layout_width="333dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/welcome"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loggedInAs" />
+
+        <TextView
+            android:id="@+id/user_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loadingString" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/roleIs" />
+
+        <TextView
+            android:id="@+id/role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loadingString" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="28sp" />
+
+        <TextView
+            android:id="@+id/main_page"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:text="@string/main_page" />
+
+        <RadioGroup
+            android:id="@+id/radioEventType"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_timetrials"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Time Trials" />
+
+            <RadioButton
+                android:id="@+id/radio_hillclimb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hill Climb" />
+
+            <RadioButton
+                android:id="@+id/radio_roadstagerace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Road Stage Race" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="Enter event descriptions" />
+
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="Enter  age requirement" />
+
+        <EditText
+            android:id="@+id/editTextDistance"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="Enter distance requirements" />
+
+        <EditText
+            android:id="@+id/editTextLevel"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="Enter level requirements" />
+
+        <EditText
+            android:id="@+id/editTextSafety"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter safety requirements" />
+
+        <EditText
+            android:id="@+id/editTextConditions"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter Expected Conditions" />
+
+        <EditText
+            android:id="@+id/editTextElevation"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter Elevation" />
+
+        <EditText
+            android:id="@+id/editTextLength"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter distance of uphill segment"
+            android:isScrollContainer="false" />
+
+        <EditText
+            android:id="@+id/editTextStage"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter stage details" />
+
+        <EditText
+            android:id="@+id/editTextRules"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter the rules of the race" />
+
+
+        <Button
+            android:id="@+id/AddEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Event" />
+
+        <ListView
+            android:id="@+id/listViewEvents"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/textView"></ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/manageUserActivity"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:text="Users List" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:text="@string/logout" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

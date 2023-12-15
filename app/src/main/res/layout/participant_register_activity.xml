@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:id="@+id/back"
+                android:layout_alignTop="@id/tt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/back"/>
+
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:text="Event"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tt"/>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/welcomeBanner"
+            android:layout_width="333dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/welcome"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/num_remaining"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="Number of remaining registration: " />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="28sp" />
+
+        <TextView
+            android:id="@+id/main_page"
+            android:layout_width="333dp"
+            android:layout_height="35dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Game Details:" />
+
+        <TextView
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:hint="Event Description" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/editTextDistance"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Input distance" />
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/editTextHeight"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Enter altitude" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/editTextLandMark"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Enter landMark" />
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/editTextSafety"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Difficulty level" />
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/editTextConditions"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Route details" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/editTextPrice"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Registration fee" />
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/editTextNum"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Participant limit"
+            android:isScrollContainer="false" />
+
+        <Button
+            android:visibility="visible"
+            android:id="@+id/register_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="register Game" />
+
+        <Button
+            android:visibility="visible"
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logout" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
